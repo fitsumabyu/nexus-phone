@@ -22,10 +22,9 @@ def voice():
     response = VoiceResponse()
     say = Say('Hi', voice='Polly.Emma')
     say.break_(strength='x-weak', time='100ms')
-    say.p('Welcome Nexus Labs.')
-    say.p('Please, leave me a message.')
+    say.p('this is protide lab, sorry we are not open right now, but please leave us a message.')
     say.break_(strength='x-weak', time='50ms')
-    say.p('Goodbye!')
+    say.p('Thank You!')
 
     response.append(say)
     response.record()
